@@ -1,5 +1,28 @@
 package ar.edu.unahur.obj2.w2j.contenidos;
 
-public class Contenido {
+public abstract class Contenido {
 
+    private String titulo;
+    private Double costoBase;
+
+    public Contenido(String titulo, Double costoBase) {
+        this.titulo = titulo;
+        this.costoBase = costoBase;
+    }
+    
+    public String getTitulo(){
+        return titulo;
+    }
+
+    public Double getCostoBase() {
+        return costoBase;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setCostoBase(Double costoBase) {
+        this.costoBase = costoBase;
+    }
 }

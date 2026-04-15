@@ -1,8 +1,8 @@
 package ar.edu.unahur.obj2.w2j.contenidos;
 
-public class Pelicula {
+public class Pelicula extends Contenido{
 
-    public String titulo;
-    public Integer costo;
-    
+    public Pelicula(String titulo, Double costoBase) {
+        super(titulo, costoBase);
+    }
 }
